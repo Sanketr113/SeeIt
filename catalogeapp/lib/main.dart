@@ -1,22 +1,31 @@
+import 'package:catalogeapp/Pages/homepage.dart';
+import 'package:catalogeapp/Pages/loginpage.dart';
+import 'package:catalogeapp/Pages/profile.dart';
+import 'package:catalogeapp/utils/routes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(CatlogApp());
+  runApp(CatalogApp());
 }
 
-class CatlogApp extends StatelessWidget {
-  const CatlogApp({Key? key}) : super(key: key);
+class CatalogApp extends StatelessWidget {
+  const CatalogApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Material(
-        child: Center(
-        child: Container(
-            child: Text("This my first app"),
-        ),
-        ),
+      themeMode: ThemeMode.light,
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        primarySwatch: Colors.lightBlue,
       ),
+      debugShowCheckedModeBanner: false,
+      initialRoute: MyRoutes.homeRoute,
+      routes: {
+        MyRoutes.loginRoute: (context) => LoginPage(),
+        MyRoutes.homeRoute: (context) => HomePage(),
+        MyRoutes.profileRoute: (context) => ProfilePage()
+      },
     );
   }
 }

@@ -1,0 +1,278 @@
+{
+    "Product":[
+        {
+            "id": "Sanket001",
+            "name": "Rog Flow Z13",
+            "desc":
+                "Windows 11 Home 12th Gen Intel® Core™ i5-12500H34.03cm(13.4), FHD+ 16:10 (1920 x 1200, WUXGA), Refresh Rate:120Hz512GB PCIe® 4.0 NVMe™ M.2 SSD (2230)",
+            "price": "₹ 1,36,990.00",
+            "color": "Black",
+            "images": "https://www.reliancedigital.in/wp-content/uploads/2022/07/Asus_ROG_FLow_Z13_Cover.jpg",
+            "details":
+                "https://rog.asus.com/in/laptops/rog-flow/rog-flow-z13-2022-series/"
+        },
+        {
+            "id": "Sanket002",
+            "name": "ROG Zephyrus G15",
+            "desc":
+                "GeForce RTX™ 3080 Laptop GPU Windows 11 Home AMD Ryzen™ 9 6900HS 39.62cm(15.6), WQHD (2560 x 1440) 16:9, Refresh Rate:165Hz 1TB PCIe® 4.0 NVMe™ M.2 SSD Supports slots up to max of: 4TB M.2 NVMe™ PCIe® 4.0 SSD",
+            "price": "₹ 2,11,990.00",
+            "color": "Black",
+            "images": "https://m.media-amazon.com/images/I/81jgP2UH6wL._SY355_.jpg",
+            "details":
+                "https://rog.asus.com/in/laptops/rog-zephyrus/rog-zephyrus-g15-2022-series/"
+                 
+        },
+        {
+            "id": "Sanket003",
+            "name": "Zephyrus G14",
+            "desc":
+                "AMD Radeon™ RX 6700S Windows 11 Home AMD Ryzen™ 9 6900HS ROG Nebula Display 35.56cm(14), QHD+ 16:10 (2560 x 1600, WQXGA), Refresh Rate:120Hz 1TB PCIe® 4.0 NVMe™ M.2 SSD Supports slots up to max of: 4TB M.2 NVMe™ PCIe® 4.0 SSD",
+            "price": "₹ 1,67,990.00",
+            "color": "White",
+            "images": "https://m.media-amazon.com/images/I/81kaKrZm+zL._SY355_.jpg",
+            "details":
+                "https://rog.asus.com/in/laptops/rog-zephyrus/rog-zephyrus-g14-2022-series/"
+                 
+        },
+        {
+            "id": "Sanket004",
+            "name": "Rog Flow X16",
+            "desc":
+                "GeForce RTX™ 3050 Ti Laptop GPU Windows 11 Home AMD Ryzen™ 7 6800HS ROG Nebula Display 40.64cm(16), QHD+ 16:10 (2560 x 1600, WQXGA), Refresh Rate:165Hz 1TB PCIe® 4.0 NVMe™ M.2 SSD Supports slots up to max of: 4TB M.2 NVMe™ PCIe® 4.0 SSD",
+            "price": "₹ 1,71,990.00",
+            "color": "Black",
+            "images": "https://m.media-amazon.com/images/I/816tM21GbLL._SY355_.jpg",
+            "details":
+                "https://rog.asus.com/in/laptops/rog-flow/rog-flow-x16-2022-series/"
+                 
+        },
+        {
+            "id": "Sanket005",
+            "name": "Rog Flow x13",
+            "desc":
+                "GeForce RTX™ 3050 Laptop GPU Windows 11 Home AMD Ryzen™ 7 6800HS 34.03cm(13.4), FHD+ 16:10 (1920 x 1200, WUXGA), Refresh Rate:120Hz 1TB PCIe® 4.0 NVMe™ M.2 SSD (2230)",
+            "price": "₹ 1,47,990.00",
+            "color": "Black",
+            "images": "https://m.media-amazon.com/images/I/21LQjTnFZBL.jpg",
+            "details":
+                "https://rog.asus.com/in/laptops/rog-flow/rog-flow-x13-2022-series/"
+                 
+        },
+        {
+            "id": "Sanket006",
+            "name": "ROG Zephyrus Dou 16",
+            "desc":
+             "GeForce RTX™ 3060 Windows 11 Home AMD Ryzen™ 7 6800H 40.64cm(16), FHD+ 16:10 (1920 x 1200, WUXGA), Refresh Rate:165Hz Additional Display: 14 1920 x 550 IPS-level Panel 2TB M.2 NVMe™ PCIe® 4.0 SSD Supports slots up to max of: 4TB M.2 NVMe™ PCIe® 4.0 SSD",
+            "price": "₹ 2,49,990.00",
+            "color": "Black0",
+            "images": "https://m.media-amazon.com/images/I/81gmRhxm9vL._SY355_.jpg",
+            "details":
+               "https://rog.asus.com/in/laptops/rog-zephyrus/rog-zephyrus-duo-16-2022-series/"
+                 
+        },
+        {
+            "id": "Sanket007",
+            "name": "ROG STRIX SCAR 17 SE",
+            "desc":
+                "NVIDIA® GeForce RTX™ 3080 Ti Laptop GPU Windows 11 Home 12th Gen Intel® Core™ i9-12950HX 43.94cm(17.3), WQHD (2560 x 1440) 16:9, Refresh Rate:240Hz 2TB + 2TB PCIe® 4.0 NVMe™ M.2 Performance SSD (RAID 0)",
+            "price": "₹ 3,59,990.00",
+            "color": "Black",
+            "images": "https://m.media-amazon.com/images/I/81AbjebpKrL._SL1500_.jpg",
+            "details":
+                "https://rog.asus.com/in/laptops/rog-strix/rog-strix-scar-17-se-2022-series/"
+                 
+        },
+         {
+            "id": "Sanket008",
+            "name": "ROG STRIX G15",
+            "desc":
+                "GeForce RTX™ 3050 Ti Laptop GPU Windows 11 Home AMD Ryzen™ 7 4800H 39.62cm(15.6), FHD (1920 x 1080) 16:9, Refresh Rate:144Hz 1TB M.2 NVMe™ PCIe® 3.0 SSD",
+            "price": "₹1,44,010.00",
+            "color": "Metalic",
+            "images": "https://m.media-amazon.com/images/I/81hEbLe3g7L._SY355_.jpg",
+            "details":
+                "https://rog.asus.com/in/laptops/rog-strix/2021-rog-strix-g15-series/"
+                 
+        },
+        {
+            "id": "Sanket009",
+            "name": "ROG STRIX SCAR 17",
+            "desc":
+                "NVIDIA® GeForce RTX™ 3070 Ti Laptop GPU Windows 11 Home 12th Gen Intel® Core™ i9-12900H 43.94cm(17.3), WQHD (2560 x 1440) 16:9, Refresh Rate:240Hz 2TB M.2 NVMe™ PCIe® 4.0 SSD Supports slots up to max of: 4TB M.2 NVMe™ PCIe® 4.0 SSD", "price": "₹ 2,34,990.00",
+            "color": "Black",
+            "images": "https://m.media-amazon.com/images/I/81x0xUBsOIL._SY355_.jpg",
+            "details":
+                "https://rog.asus.com/in/laptops/rog-strix/rog-strix-scar-17-2022-series/"
+                 
+        },
+        {
+            "id": "Sanket010",
+            "name": "ROG STRIX SCAR 15",
+            "desc":
+                "NVIDIA® GeForce RTX™ 3070 Ti Laptop GPU Windows 11 Home 12th Gen Intel® Core™ i9-12900H 39.62cm(15.6), WQHD (2560 x 1440) 16:9, Refresh Rate:240Hz 1TB M.2 NVMe™ PCIe® 4.0 SSD Supports slots up to max of: 4TB M.2 NVMe™ PCIe® 4.0 SSD",
+            "price": "₹ 2,29,990.00",
+            "color": "Metalic",
+            "images": "https://m.media-amazon.com/images/I/81DWMJcmwiL._SY355_.jpg",
+            "details":
+                "https://rog.asus.com/in/laptops/rog-strix/rog-strix-scar-15-2022-series/"
+                 
+        },
+        {
+            "id": "Sanket011",
+            "name": "ROG STRIX G15 ADVANTAGE EDITION",
+            "desc":
+                "AMD Radeon™ RX 6800M Windows 11 Home AMD Ryzen™ 9 5980HX 39.62cm(15.6), WQHD (2560 x 1440) 16:9, Refresh Rate:165hz 1TB M.2 NVMe™ PCIe® 3.0 SSD",
+            "price": "₹ 1,49,990.00",
+            "color": "Black",
+            "images": "https://www.kitguru.net/wp-content/uploads/2021/06/3-AMD-Radeon-RX-6000M-pic-27-copy.jpg",
+            "details":
+                "https://rog.asus.com/in/laptops/rog-strix/2021-rog-strix-g15-advantage-edition-series/"
+                 
+        },
+        {
+            "id": "Sanket012",
+            "name": "ROG STRIX G17",
+            "desc":
+                "GeForce RTX™ 3050 Laptop GPU Windows 11 Home AMD Ryzen™ 7 6800H 43.94cm(17.3), FHD (1920 x 1080) 16:9, Refresh Rate:144Hz 512GB PCIe® 4.0 NVMe™ M.2 SSD",
+            "price": "₹ 85,990.00",
+            "color": "Metalic",
+            "images": "https://m.media-amazon.com/images/I/811bO2VRU9L._SY355_.jpg",
+            "details":
+                "https://rog.asus.com/in/laptops/rog-strix/rog-strix-g17-2022-series/"
+                 
+        },
+        {
+            "id": "Sanket013",
+            "name": "ASUS TUF DASH F15",
+            "desc":
+                "Windows 11 Home Up to GeForce RTX™ 3070 Laptop GPU Intel® Core™ i7-12650H Processor  Up to 15.6” QHD 165Hz 100% DCI-P3 Display  Arc Flow Fans™ MIL-STD-810H Standards 19.95mm Thin Chassis All-day Battery Life & 100W Type-C Charging",
+            "price": "₹ 88,990.00",
+            "color": "White",
+            "images": "https://www.reliancedigital.in/medias/Asus-TUF-Dash-F15-Laptop-492574738-20?context=bWFzdGVyfGltYWdlc3wzOTEwM3xpbWFnZS9qcGVnfGltYWdlcy9oMTIvaDgzLzk3NDU5MDgzNjczOTAuanBnfDI2MmQ5Y2Y1NDdkMTZlOWI1NzM5NzJjNjQ5M2U3NmYyMzkwN2UwMjVmMjU0MTBiODJhOTQ3MGYyZjlmM2ViM2Y",
+            "details":
+                "https://www.asus.com/in/Laptops/For-Gaming/TUF-Gaming/ASUS-TUF-Dash-F15-2022/"
+                 
+        },
+        {
+            "id": "Sanket014",
+            "name": "ASUS TUF GAMING A15",
+            "desc":
+                "Windows 11 Home  Up to GeForce RTX™ 3070 Laptop GPU AMD Ryzen™ 7 6800H Processor MUX Switch Up to 15.6” QHD 165Hz 100% DCI-P3 Display Arc Flow Fans™ MIL-STD-810H Standards",
+            "price": "₹ 1,07,990.00",
+            "color": "Black",
+            "images": "https://m.media-amazon.com/images/I/61hZjjFLEoL._SY355_.jpg",
+            "details":
+                "https://www.asus.com/in/Laptops/For-Gaming/TUF-Gaming/ASUS-TUF-Gaming-A15-2022/"
+                 
+        },
+        {
+            "id": "Sanket015",
+            "name": "ASUS TUF GAMING F15",
+            "desc":
+                "Windows 11 Home Up to GeForce RTX™ 3070 Laptop GPUIntel® Core™ i7-12700H Processor MUX Switch Up to 15.6” QHD 165Hz 100% DCI-P3 Display Arc Flow Fans™ MIL-STD-810H Standards",
+            "price": "₹ 1,09,990.00",
+            "color": "Black",
+            "images": "https://m.media-amazon.com/images/I/71MYvlyVKGL._SY355_.jpg",
+            "details":
+                "https://www.asus.com/in/Laptops/For-Gaming/TUF-Gaming/ASUS-TUF-Gaming-F15-2022/"
+                 
+        },
+        {
+            "id": "Sanket016",
+            "name": "ASUS TUF GAMING A17",
+            "desc":
+                "Windows 11 Home Up to GeForce RTX™ 3070 Laptop GPU AMD Ryzen™ 7 6800H Processor MUX Switch 17.3” FHD 144Hz Display  Arc Flow Fans™ MIL-STD-810H Standards",
+            "price": " ₹ 1,02,990.00",
+            "color": "Black",
+            "images": "https://m.media-amazon.com/images/I/7116IOYGNeL._SL1500_.jpg",
+            "details":
+                "https://www.asus.com/in/Laptops/For-Gaming/TUF-Gaming/ASUS-TUF-Gaming-A17-2022/"
+                 
+        },
+        {
+            "id": "Sanket017",
+            "name": "ASUS Vivobook 15",
+            "desc":
+                "Windows 11 Home - ASUS recommends Windows 11 Pro for business Up to 12th Intel® Core™ i7 processor Up to 16 GB DDR4 memory Up to 512 GB SSD storage Up to 15.6'' FHD NanoEdge display 180-degree hinge design Multiple color option Optional fingerprint login sensor",
+            "price": "₹ 44,990.00",
+            "color": "Silver",
+            "images": "https://m.media-amazon.com/images/I/718g4WuxDPL._SY355_.jpg",
+            "details":
+                "https://www.asus.com/in/Laptops/For-Home/Vivobook/Vivobook-15-X1502-12th-Gen-Intel/"
+                 
+        },
+        {
+            "id": "Sanket018",
+            "name": "Vivobook 16X",
+            "desc":
+                "Windows 11 Home - ASUS recommends Windows 11 Pro for business Up to AMD Ryzen™ 7 5800H Mobile Processor Up to 16 GB DDR4 memory Up to 512 GB SSD storage Up to 16'' NanoEdge display 180-degree hinge design Multiple colors option Optional fingerprint login sensor",
+            "price": "₹ 54,990.00",
+            "color": "Silver",
+            "images": "https://m.media-amazon.com/images/I/91UG83hMSQL._SY355_.jpg",
+            "details":
+                "https://www.asus.com/in/Laptops/For-Home/Vivobook/Vivobook-16X-M1603-AMD-Ryzen-5000-series/"
+                 
+        },
+        {
+            "id": "Sanket019",
+            "name": "Vivobook 15 OLED",
+            "desc":
+                "Windows 10 Home - ASUS recommends Windows 10 Pro for business , Free Upgrade to Windows 11¹ (when available, see below) Up to 11th Intel® Core™ i7 processor Up to NVIDIA® GeForce® MX350 Up to 16 GB memory Up to 1 TB HDD + 256G PCIe SSD Up to 39.68cm(15.6) FHD NanoEdge OLED display ASUS Intelligent Performance Technology (AIPT) Multiple color option with color-blocked Enter key",
+            "price": " ₹ 41,990.00",
+            "color": "Silver",
+            "images": "https://m.media-amazon.com/images/I/71XCnqzQTnL._SY355_.jpg",
+            "details":
+                "https://www.asus.com/in/Laptops/For-Home/Vivobook/Vivobook-K15-OLED-K513-11th-gen-intel/"
+                 
+        },
+        {
+            "id": "Sanket020",
+            "name": "Zenbook Pro 14 Duo OLED",
+            "desc":
+                "Windows 11 Home - ASUS recommends Windows 11 Pro for business Intel® Evo™ certified laptop Up to 12th gen Intel® Core™ i9 processor Up to NVIDIA® GeForce® RTX 3050 Ti Up to 32 GB memory Up to 2 TB SSD storage Up to 14.5 2.8K OLED NanoEdge display Long-lasting 76 Wh battery",
+            "price": "",
+            "color": "Black",
+            "images": "https://m.media-amazon.com/images/I/71Z5mlWQHZL._SY355_.jpg",
+            "details":
+                "https://www.asus.com/in/Laptops/For-Creators/Zenbook/Zenbook-Pro-14-Duo-OLED-UX8402-12th-Gen-Intel/"
+                 
+        },
+        {
+            "id": "Sanket021",
+            "name": "Zenbook Pro Duo 15 OLED",
+            "desc":
+                "Windows 11 Home - ASUS recommends Windows 11 Pro for business Up to 12th Intel® Core™ i9 processor Up to NVIDIA® GeForce RTX 3070Ti Up to 32 GB memory Up to 1 TB SSD storage Up to 15.6 4K OLED NanoEdge display NanoEdge 93% screen-to-body ratio DCI-P3: 100%",
+            "price": "₹ 2,29,990.00",
+            "color": "Black",
+            "images": "https://m.media-amazon.com/images/I/711h1ICau1L._SY355_.jpg",
+            "details":
+                "https://www.asus.com/in/Laptops/For-Home/Zenbook/Zenbook-Pro-Duo-15-OLED-UX582-12th-Gen-Intel/"
+                 
+        },
+        {
+            "id": "Sanket022",
+            "name": "ASUS Zenbook 13 OLED",
+            "desc":
+                "Windows 10 Home - ASUS recommends Windows 10 Pro for business , Free Upgrade to Windows 11¹ (when available, see below) Up to 11th gen Intel® Core™ i7 processor Up to 16 GB memory Up to 1 TB SSD storage Up to 33.78cm(13.3) FHD OLED display Long battery life Thunderbolt™ 4 USB-C®",
+            "price": " ₹ 60,990.00",
+            "color": "Silver",
+            "images": "https://m.media-amazon.com/images/I/71UvYJKyWeL._SY355_.jpg",
+            "details":
+                "https://www.asus.com/in/Laptops/For-Home/Zenbook/Zenbook-13-OLED-UX325-11th-Gen-Intel/"
+                 
+        },
+        {
+            "id": "Sanket024",
+            "name": "ASUS Chromebook Flip CX3",
+            "desc":
+                "Chrome OS Up to 8 GB memory Up to 64 GB eMMC 11.6 HD display Anti-glare display 1.5 mm key travel Dual-band WiFi 5 (802.11 ac) Up to 13 hours battery life",
+            "price": "₹ 19,990.00",
+            "color": "Silver",
+            "images": "https://m.media-amazon.com/images/I/71G5ffVau+L._SY450_.jpg",
+            "details":
+                "https://www.asus.com/in/Laptops/For-Home/Chromebook/ASUS-Chromebook-Flip-CX3-CX3400-11th-Gen-Intel/"
+                 
+        }
+    ]
+}
