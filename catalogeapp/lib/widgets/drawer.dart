@@ -14,7 +14,7 @@ class _myDrawerState extends State<myDrawer> {
   @override
   Widget build(BuildContext context) {
     void profile() {
-      Navigator.popAndPushNamed(context, MyRoutes.profileRoute);
+      Navigator.popAndPushNamed(context, MyRoutes.AboutMeRoute);
     }
 
     void homepage() {
@@ -72,7 +72,7 @@ class _myDrawerState extends State<myDrawer> {
                 color: Colors.grey,
               ),
               title: Text(
-                'Profile',
+                'About Me',
                 style: TextStyle(fontSize: 20, color: Colors.white),
               ),
             ),

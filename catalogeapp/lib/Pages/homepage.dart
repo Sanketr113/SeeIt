@@ -36,9 +36,21 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+                colors: [
+                  Color.fromARGB(255, 0, 0, 0),
+                  Color.fromARGB(255, 80, 80, 80),
+                ],
+                begin: const FractionalOffset(1.0, 0.0),
+                end: const FractionalOffset(1.0, 1.0),
+                stops: [0.0, 1.0],
+                tileMode: TileMode.clamp),
+          ),
+        ),
         title: Text(
-          "CATALOG APP",
+          "See It",
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontFamily: 'BankGothic',

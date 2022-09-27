@@ -1,15 +1,18 @@
+import 'package:catalogeapp/Pages/ResetPassword.dart';
 import 'package:catalogeapp/Pages/homepage.dart';
 import 'package:catalogeapp/Pages/loginpage.dart';
-import 'package:catalogeapp/Pages/profile.dart';
+import 'package:catalogeapp/Pages/AboutMe.dart';
+import 'package:catalogeapp/Pages/signUp.dart';
 import 'package:catalogeapp/utils/routes.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 void main() {
-  runApp(CatalogApp());
+  runApp(SeeIt());
 }
 
-class CatalogApp extends StatelessWidget {
-  const CatalogApp({Key? key}) : super(key: key);
+class SeeIt extends StatelessWidget {
+  const SeeIt({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,11 +23,13 @@ class CatalogApp extends StatelessWidget {
         primarySwatch: Colors.lightBlue,
       ),
       debugShowCheckedModeBanner: false,
-      initialRoute: MyRoutes.homeRoute,
+      initialRoute: MyRoutes.loginRoute,
       routes: {
+        MyRoutes.signUpRoute: (context) => signUp(),
         MyRoutes.loginRoute: (context) => LoginPage(),
         MyRoutes.homeRoute: (context) => HomePage(),
-        MyRoutes.profileRoute: (context) => ProfilePage()
+        MyRoutes.AboutMeRoute: (context) => AboutMe(),
+        MyRoutes.ResetPasswordRoute: (context) => ResetPassword(),
       },
     );
   }
