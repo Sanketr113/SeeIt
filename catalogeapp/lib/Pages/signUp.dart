@@ -1,4 +1,7 @@
+
 import 'package:catalogeapp/utils/routes.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -26,11 +29,16 @@ class _signUpState extends State<signUp> {
     }
   }
 
-  final firstNameEditingController = TextEditingController();
-  final lastNameEditingController = TextEditingController();
-  final emailEditingController = TextEditingController();
-  final passwordEditingController = TextEditingController();
-  final confirmpasswordEditingController = TextEditingController();
+ Future<FirebaseApp>? _firebaseapp;
+
+  TextEditingController email = TextEditingController();
+  TextEditingController passwords = TextEditingController();
+  bool IsLoading = false;
+
+  void intState() {
+    super.initState();
+    _firebaseapp = Firebase.initializeApp();
+  }
 
   String password = "";
 
@@ -65,125 +73,150 @@ class _signUpState extends State<signUp> {
               ),
               Padding(
                 padding: const EdgeInsets.all(20.0),
-                child: Column(children: [
-                  TextFormField(
-                    decoration: InputDecoration(
-                        prefixIcon: Icon(Icons.perm_identity),
-                        hintText: "Enter First Name",
-                        labelText: "First Name",
-                        border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10))),
-                    validator: (String? value) {
-                      if (value != null && value.isEmpty) {
-                        return "First Name cannot be empty";
-                      }
-                      return null;
-                    },
-                  ),
-                  SizedBox(
-                    height: 15,
-                  ),
-                  TextFormField(
-                    decoration: InputDecoration(
-                        prefixIcon: Icon(Icons.perm_identity),
-                        hintText: "Enter Last Name",
-                        labelText: "Last Name",
-                        border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10))),
-                    validator: (String? value) {
-                      if (value != null && value.isEmpty) {
-                        return "Last Name cannot be empty";
-                      }
-                      return null;
-                    },
-                  ),
-                  SizedBox(
-                    height: 15,
-                  ),
-                  TextFormField(
-                    decoration: InputDecoration(
-                        prefixIcon: Icon(Icons.mail),
-                        hintText: "Enter Email",
-                        labelText: "Email",
-                        border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10))),
-                    validator: (String? value) {
-                      if (value != null && value.isEmpty) {
-                        return "Email cannot be empty";
-                      }
-                      return null;
-                    },
-                  ),
-                  SizedBox(
-                    height: 15,
-                  ),
-                  TextFormField(
-                      obscureText: true,
-                      decoration: InputDecoration(
-                          prefixIcon: Icon(Icons.key),
-                          hintText: "Enter Password",
-                          labelText: "Password",
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(10))),
-                      validator: (String? value) {
-                        if (value != null && value.isEmpty) {
-                          return "Password cannot be empty";
-                        } else if (value!.length < 6) {
-                          return "Password need to be more than 6 digits";
-                        }
-                        password = value;
-                        return null;
-                      }),
-                  SizedBox(
-                    height: 15,
-                  ),
-                  TextFormField(
-                      obscureText: true,
-                      decoration: InputDecoration(
-                          prefixIcon: Icon(Icons.key),
-                          hintText: "Enter Confirm Password",
-                          labelText: "Confirm Password",
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(10))),
-                      validator: (String? value) {
-                        if (value != null && value.isEmpty) {
-                          return "Confirm Password cannot be empty";
-                        } else if (value != password) {
-                          return "Confirm Password does not match password";
-                        }
-                        return null;
-                      }),
-                  SizedBox(
-                    height: 15,
-                  ),
-                  InkWell(
-                    onTap: () => moveToHome(context),
-                    child: AnimatedContainer(
-                      duration: Duration(seconds: 1),
-                      width: changebutton ? 50 : 150,
-                      height: 50,
-                      alignment: Alignment.center,
-                      child: changebutton
-                          ? Icon(
-                              Icons.done,
-                              color: Colors.white,
-                            )
-                          : Text(
-                              "SignUp",
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 19,
-                              ),
+                child: FutureBuilder(
+                  future: _firebaseapp,
+                  builder: ((context, snapshot) {
+                    if (snapshot.connectionState == ConnectionState.waiting) {
+                      return CircularProgressIndicator();
+                    }
+                    return SingleChildScrollView(
+                      child: Column(children: [
+                        TextFormField(
+                          decoration: InputDecoration(
+                              prefixIcon: Icon(Icons.perm_identity),
+                              hintText: "Enter First Name",
+                              labelText: "First Name",
+                              border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(10))),
+                          validator: (String? value) {
+                            if (value != null && value.isEmpty) {
+                              return "First Name cannot be empty";
+                            }
+                            return null;
+                          },
+                        ),
+                        SizedBox(
+                          height: 15,
+                        ),
+                        TextFormField(
+                          decoration: InputDecoration(
+                              prefixIcon: Icon(Icons.perm_identity),
+                              hintText: "Enter Last Name",
+                              labelText: "Last Name",
+                              border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(10))),
+                          validator: (String? value) {
+                            if (value != null && value.isEmpty) {
+                              return "Last Name cannot be empty";
+                            }
+                            return null;
+                          },
+                        ),
+                        SizedBox(
+                          height: 15,
+                        ),
+                        TextFormField(
+                          controller: email,
+                          keyboardType: TextInputType.emailAddress,
+                          decoration: InputDecoration(
+                              prefixIcon: Icon(Icons.mail),
+                              hintText: "Enter Email",
+                              labelText: "Email",
+                              border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(10))),
+                          validator: (String? value) {
+                            if (value != null && value.isEmpty) {
+                              return "Email cannot be empty";
+                            }
+                            return null;
+                          },
+                        ),
+                        SizedBox(
+                          height: 15,
+                        ),
+                        TextFormField(
+                            controller: passwords,
+                            obscureText: true,
+                            decoration: InputDecoration(
+                                prefixIcon: Icon(Icons.key),
+                                hintText: "Enter Password",
+                                labelText: "Password",
+                                border: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(10))),
+                            validator: (String? value) {
+                              if (value != null && value.isEmpty) {
+                                return "Password cannot be empty";
+                              } else if (value!.length < 6) {
+                                return "Password need to be more than 6 digits";
+                              }
+                              password = value;
+                              return null;
+                            }),
+                        SizedBox(
+                          height: 15,
+                        ),
+                        TextFormField(
+                            obscureText: true,
+                            decoration: InputDecoration(
+                                prefixIcon: Icon(Icons.key),
+                                hintText: "Enter Confirm Password",
+                                labelText: "Confirm Password",
+                                border: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(10))),
+                            validator: (String? value) {
+                              if (value != null && value.isEmpty) {
+                                return "Confirm Password cannot be empty";
+                              } else if (value != password) {
+                                return "Confirm Password does not match password";
+                              }
+                              return null;
+                            }),
+                        SizedBox(
+                          height: 15,
+                        ),
+                        InkWell(
+                          onTap: () async {
+                            setState(() {
+                              IsLoading = true;
+                            });
+                            await FirebaseAuth.instance
+                                .createUserWithEmailAndPassword(
+                                    email: email.text,
+                                    password: passwords.text);
+                            moveToHome(context);
+                            setState(() {
+                              IsLoading = false;
+                            });
+                          },
+                          child: AnimatedContainer(
+                            duration: Duration(seconds: 1),
+                            width: changebutton ? 50 : 150,
+                            height: 50,
+                            alignment: Alignment.center,
+                            child: changebutton
+                                ? Icon(
+                                    Icons.done,
+                                    color: Colors.white,
+                                  )
+                                : Text(
+                                    "SignUp",
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 19,
+                                    ),
+                                  ),
+                            decoration: BoxDecoration(
+                              color: Colors.lightBlue,
+                              borderRadius:
+                                  BorderRadius.circular(changebutton ? 50 : 12),
                             ),
-                      decoration: BoxDecoration(
-                        color: Colors.lightBlue,
-                        borderRadius:
-                            BorderRadius.circular(changebutton ? 50 : 12),
-                      ),
-                    ),
-                  ),
-                ]),
+                          ),
+                        ),
+                      ]),
+                    );
+                  }),
+                ),
               )
             ],
           ),
