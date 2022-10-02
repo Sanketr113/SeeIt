@@ -14,6 +14,7 @@ class _aboutMeState extends State<aboutMe> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: ListView(padding: EdgeInsets.zero, children: [
         buildtop(),
         buildcontent(),
@@ -34,7 +35,7 @@ Widget buildtop() => Stack(
     );
 
 Widget buildCoverImage() => Container(
-      color: Colors.grey,
+      color: Color.fromARGB(255, 0, 0, 0),
       child: Image.asset(
         'assets/images/background.png',
         fit: BoxFit.cover,
@@ -47,7 +48,7 @@ Widget buildCoverImage() => Container(
 Widget buildProfileImage() => CircleAvatar(
       radius: 100,
       //backgroundColor: Colors.transparent,
-      backgroundColor: Color.fromARGB(255, 48, 48, 48),
+      backgroundColor: Color.fromARGB(255, 0, 0, 0),
       child: CircleAvatar(
         radius: 90,
         backgroundColor: Colors.transparent,

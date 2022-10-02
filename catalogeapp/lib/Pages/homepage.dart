@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
             gradient: LinearGradient(
                 colors: [
                   Color.fromARGB(255, 0, 0, 0),
-                  Color.fromARGB(255, 80, 80, 80),
+                  Color.fromARGB(255, 48, 48, 48),
                 ],
                 begin: const FractionalOffset(1.0, 0.0),
                 end: const FractionalOffset(1.0, 1.0),

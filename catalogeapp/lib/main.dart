@@ -1,3 +1,4 @@
+import 'dart:ffi';
 import 'dart:ui';
 
 import 'package:catalogeapp/Pages/ResetPassword.dart';
@@ -6,6 +7,7 @@ import 'package:catalogeapp/Pages/loginpage.dart';
 import 'package:catalogeapp/Pages/AboutMe.dart';
 import 'package:catalogeapp/Pages/signUp.dart';
 import 'package:catalogeapp/utils/routes.dart';
+import 'package:catalogeapp/utils/shared.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
@@ -19,8 +21,31 @@ void main() async {
   runApp(const SeeIt());
 }
 
-class SeeIt extends StatelessWidget {
+class SeeIt extends StatefulWidget {
   const SeeIt({Key? key}) : super(key: key);
+
+  @override
+  State<SeeIt> createState() => _SeeItState();
+}
+
+class _SeeItState extends State<SeeIt> {
+  var isLogin;
+
+  checkUserLoginState() async {
+    await Shared.getUserSharedPrefernces().then(
+      (value) {
+        setState(() {
+          isLogin = value;
+        });
+      },
+    );
+  }
+  
+
+  void iniState() {
+    checkUserLoginState();
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +56,9 @@ class SeeIt extends StatelessWidget {
         primarySwatch: Colors.lightBlue,
       ),
       debugShowCheckedModeBanner: false,
-      initialRoute: MyRoutes.loginRoute,
+      initialRoute: FirebaseAuth.instance.currentUser != null
+          ? '/HomePage'
+          : '/LoginPage',
       routes: {
         MyRoutes.signUpRoute: (context) => signUp(),
         MyRoutes.loginRoute: (context) => LoginPage(),

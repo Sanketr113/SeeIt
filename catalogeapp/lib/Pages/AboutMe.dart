@@ -16,13 +16,18 @@ class _AboutMeState extends State<AboutMe> {
     return Scaffold(
       backgroundColor: Colors.transparent,
       appBar: AppBar(
+        leading: new IconButton(
+          icon: new Icon(Icons.arrow_back,
+              color: Color.fromARGB(255, 255, 255, 255)),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
         centerTitle: true,
         flexibleSpace: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
                 colors: [
-                  Color.fromARGB(255, 48, 48, 48),
-                  Color.fromARGB(255, 122, 122, 122),
+                  Color.fromARGB(255, 0, 0, 0),
+                  Color.fromARGB(255, 90, 90, 90),
                 ],
                 begin: const FractionalOffset(1.0, 0.0),
                 end: const FractionalOffset(1.0, 1.0),
@@ -41,7 +46,7 @@ class _AboutMeState extends State<AboutMe> {
         ),
       ),
       body: aboutMe(),
-      drawer: myDrawer(),
+      // drawer: myDrawer(),
     );
   }
 }

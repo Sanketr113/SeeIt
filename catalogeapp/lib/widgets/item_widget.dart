@@ -58,14 +58,14 @@ class ItemWidget extends StatelessWidget {
             ),
             ButtonBar(
               children: [
-                FlatButton(
-                  child: Text(item.price,
+                
+                 Text(item.price,
                       style: TextStyle(
                         fontSize: 17,
                         color: Color.fromARGB(255, 105, 151, 236),
                       )),
-                  onPressed: () {},
-                )
+                  
+                
               ],
             ),
           ]),

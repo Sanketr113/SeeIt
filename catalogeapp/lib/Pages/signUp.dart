@@ -1,4 +1,3 @@
-
 import 'package:catalogeapp/utils/routes.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -29,7 +28,7 @@ class _signUpState extends State<signUp> {
     }
   }
 
- Future<FirebaseApp>? _firebaseapp;
+  Future<FirebaseApp>? _firebaseapp;
 
   TextEditingController email = TextEditingController();
   TextEditingController passwords = TextEditingController();
@@ -45,24 +44,25 @@ class _signUpState extends State<signUp> {
   @override
   Widget build(BuildContext context) {
     return Material(
+      color: Colors.black,
       child: SingleChildScrollView(
         child: Form(
           key: _formkey,
           child: Column(
             children: [
               SizedBox(
-                height: 70,
+                height: 40,
               ),
               ClipRRect(
                 borderRadius: BorderRadius.circular(30),
                 child: Image.asset(
-                  'assets/images/accoutimage.png',
-                  height: 130,
-                  width: 130,
+                  'assets/images/logo04.png',
+                  height: 180,
+                  width: 180,
                 ),
               ),
               SizedBox(
-                height: 30,
+                height: 20,
               ),
               Text(
                 "Create Account",
@@ -189,7 +189,7 @@ class _signUpState extends State<signUp> {
                             });
                           },
                           child: AnimatedContainer(
-                            duration: Duration(seconds: 1),
+                            duration: Duration(milliseconds: 500),
                             width: changebutton ? 50 : 150,
                             height: 50,
                             alignment: Alignment.center,
