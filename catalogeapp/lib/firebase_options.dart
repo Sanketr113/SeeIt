@@ -58,7 +58,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyDzG5Ih70_wVt6WsNmtvZY2xFsg4CgBgfQ',
-    appId: '1:840881813339:android:ce1387eb2237a4ceeb8c7e',
+    appId: '1:840881813339:android:8bf7c2e93ab6d8b2eb8c7e',
     messagingSenderId: '840881813339',
     projectId: 'see-it-82c78',
     storageBucket: 'see-it-82c78.appspot.com',
@@ -66,11 +66,11 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyAjz7V0nD2CbuYWv_OZsLrUXfn1CF9y_-c',
-    appId: '1:840881813339:ios:184cf80ed8046e80eb8c7e',
+    appId: '1:840881813339:ios:7e9d42c734e16a82eb8c7e',
     messagingSenderId: '840881813339',
     projectId: 'see-it-82c78',
     storageBucket: 'see-it-82c78.appspot.com',
-    iosClientId: '840881813339-0tg30hq5mf0fti4c29otf1tlv00el9n9.apps.googleusercontent.com',
-    iosBundleId: 'com.example.catalogeapp',
+    iosClientId: '840881813339-bg3crg31um5t86ofrg81glgphgcprcdu.apps.googleusercontent.com',
+    iosBundleId: 'com.sanket.catalogeapp',
   );
 }

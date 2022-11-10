@@ -100,14 +100,15 @@ class _myDrawerState extends State<myDrawer> {
                 ),
               ),
               ListTile(
-                onTap: (() {
-                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                    content: Text('Do you want to logout'),
-                    duration: Duration(seconds: 5),
-                    action: SnackBarAction(
-                        label: "Logout", onPressed: (() => signOut())),
-                  ));
-                }),
+                // onTap: (() {
+                //   ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                //     content: Text('Do you want to logout'),
+                //     duration: Duration(seconds: 5),
+                //     action: SnackBarAction(
+                //         label: "Logout", onPressed: (() => signOut())),
+                //   ));
+                // }),
+                onTap: (() => signOut()),
                 leading: Icon(Icons.logout_rounded),
                 iconColor: Colors.grey,
                 title: Text('SignOut',

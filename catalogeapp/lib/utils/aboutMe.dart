@@ -124,7 +124,7 @@ Widget buildText() => Container(
             height: 10,
           ),
           Text(
-              "Flutter Software Developer and B.tech Undergrad at Indian Institute of Technology Sricity.")
+              "Flutter Software Developer and B.tech Undergrad at Indian Institute of Information Technology Sricity.")
         ],
       ),
     );
